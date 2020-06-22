@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/patchwork_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/patchwork/patchwork_{{ version }}.tar.gz
-  sha256: 8bfb59b91775781848f39eedcaaaf92c147e2637f384085fcdd41fc8355b3c63
+  sha256: 02bcc43ca778a0f981fd7f36c0b15b0d1eb8ed87d3db0b8bfd33b708881aa972
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,15 +40,11 @@ test:
 about:
   home: https://patchwork.data-imaginist.com, https://github.com/thomasp85/patchwork
   license: MIT
-  summary: The 'ggplot2' package provides a strong API for sequentially building up a plot, but
-    does not concern itself with composition of multiple plots. 'patchwork' is a package
-    that expands the API to allow for arbitrarily complex composition of plots by, among
-    others, providing mathematical operators for combining multiple plots. Other packages
-    that try to address this need (but with a different approach) are 'gridExtra' and
-    'cowplot'.
+  summary: The 'ggplot2' package provides a strong API for sequentially building up a plot, but does not concern itself with composition of multiple plots. 'patchwork' is a package that expands the API to allow for arbitrarily complex composition of plots by, among others, providing mathematical operators for combining multiple
+    plots. Other packages that try to address this need (but with a different approach) are 'gridExtra' and 'cowplot'.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
