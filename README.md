@@ -5,11 +5,9 @@ Home: https://patchwork.data-imaginist.com, https://github.com/thomasp85/patchwo
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-patchwork-feedstock/blob/master/LICENSE.txt)
 
 Summary: The 'ggplot2' package provides a strong API for sequentially building up a plot, but does not concern itself with composition of multiple plots. 'patchwork' is a package that expands the API to allow for arbitrarily complex composition of plots by, among others, providing mathematical operators for combining multiple plots. Other packages that try to address this need (but with a different approach) are 'gridExtra' and 'cowplot'.
-
-
 
 Current build status
 ====================
