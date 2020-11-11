@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/patchwork_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/patchwork/patchwork_{{ version }}.tar.gz
-  sha256: 02bcc43ca778a0f981fd7f36c0b15b0d1eb8ed87d3db0b8bfd33b708881aa972
+  sha256: 93f97064a3300d35ba155dd247d45fbfa06e72c30d037ecf97b5a9ead8e67a8f
 
 build:
   merge_build_host: true  # [win]
